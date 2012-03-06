@@ -1,0 +1,9 @@
+.site > .viewport > .debate {
+  $horizontal_padding: 20px;
+  @include abs_pos(0, $COLLAPSED_DEBATE_WIDTH - $DEBATE_WIDTH, 0);
+  @include bg_img(url(/images/debate-bg.jpg), 0 0, repeat, $graphite);
+  border-left: $horizontal_padding solid $graphite;
+  padding: $TOP_PADDING + 20px $horizontal_padding 20px 0;
+  color: $white;
+  width: $DEBATE_WIDTH;
+}

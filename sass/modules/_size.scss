@@ -1,0 +1,5 @@
+@mixin size($width: auto, $height: auto) {
+  display: block;
+  width: $width;
+  height: $height;
+}

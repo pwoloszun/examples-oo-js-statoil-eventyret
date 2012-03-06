@@ -1,0 +1,24 @@
+body {
+  background-color: $graphite;
+  font-family: $light_font;
+  font-size: 18px;
+  line-height: 1.5;
+  color: $graphite;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.clear {
+  @include clearfix;
+  clear: both;
+}
+
+.invisible {
+  visibility: hidden;
+}

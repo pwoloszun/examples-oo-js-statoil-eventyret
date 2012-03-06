@@ -1,0 +1,3 @@
+@mixin bg_img($url, $position: 0 0, $repeat: no-repeat, $color: transparent) {
+  background: $url $repeat $position scroll $color;
+}

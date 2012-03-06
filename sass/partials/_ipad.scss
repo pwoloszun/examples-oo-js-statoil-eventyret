@@ -1,0 +1,8 @@
+@media only screen and (orientation:portrait) {
+  .site {
+    width: 768px;
+  }
+  .site > .viewport > .debate {
+    right: 48px - $DEBATE_WIDTH;
+  }
+}

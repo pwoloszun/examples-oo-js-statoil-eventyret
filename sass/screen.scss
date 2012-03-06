@@ -1,0 +1,37 @@
+@import "compass/reset";
+@import "compass/utilities/general/clearfix";
+@import "compass/utilities/general/float";
+@import "modules/all";
+
+$SITE_WIDTH: 1280px; //1280..768
+$COLLAPSED_DEBATE_WIDTH: 484px; //484 .. 84
+
+$STORIES_WIDTH: 620px;
+$DEBATE_WIDTH: 544px;
+
+$HEADER_HEIGHT: 837px;
+$TOP_PADDING: 137px;
+
+@import "partials/commons";
+@import "partials/fonts";
+@import "partials/header";
+@import "partials/viewport";
+@import "partials/navigation";
+@import "partials/stories";
+@import "partials/debate";
+
+.site {
+  width: $SITE_WIDTH;
+  margin: 0 auto;
+  position: relative;
+  .screens-toggler {
+    background-color: #d00;
+    padding: 1em;
+    color: #fff;
+    position: fixed;
+    top: 50px;
+    left: 50px;
+  }
+}
+
+@import "partials/ipad";

@@ -1,0 +1,22 @@
+#navigation {
+  @include abs_pos(10px, autom, auto, 10px);
+  z-index: 3;
+  width: 16px;
+  &:hover {
+    width: 120px;
+  }
+  .story-link {
+    height: 110px;
+    margin-bottom: 2px;
+    overflow: hidden;
+    background-color: $light_grey;
+    &.active {
+      background-color: $graphite;
+      color: $white;
+    }
+    &:hover {
+      background-color: $magenta;
+      color: $white;
+    }
+  }
+}

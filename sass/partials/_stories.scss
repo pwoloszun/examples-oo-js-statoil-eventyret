@@ -1,0 +1,62 @@
+@mixin story_margin {
+  margin: 0 auto 16px;
+}
+
+.site > .viewport > .stories {
+  background-color: $white;
+  color: $graphite;
+  width: $STORIES_WIDTH;
+  $hp: ($SITE_WIDTH - 280px) / 10;
+  padding: $TOP_PADDING + 20px $hp 20px;
+  .content {
+    width: 620px;
+  }
+  .story {
+    @include hidden;
+    margin: 20px auto;
+    .subject {
+      @include story_margin;
+      color: $magenta;
+    }
+    .title {
+      @include story_margin;
+      font-size: 300%;
+      line-height: 1;
+    }
+    .preface {
+      @include story_margin;
+      font-family: $italic_bold_font;
+    }
+    .subtitle {
+      font-size: 200%;
+      paddgin: 0.5em 0;
+      margin: 1em auto;
+      border-bottom: 1px dashed $graphite;
+    }
+    .section {
+      .left, .right {
+        width: 47%;
+      }
+      .first-line {
+        @include bg_img(url(/images/sec-start.jpg), 0 0.25em);
+        font-family: $medium_font;
+        padding-left: 16px;
+      }
+      p {
+        @include story_margin;
+        .end-point {
+          @include bg_img(url(/images/sec-end.jpg), right bottom);
+          width: 0.5em;
+          height: 1em;
+          display: inline-block;
+        }
+      }
+    }
+    .animation {
+      @include bg_img(url(/images/loader.gif), center center);
+      img {
+        @include hidden;
+      }
+    }
+  }
+}

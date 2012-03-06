@@ -1,0 +1,21 @@
+!!! 5
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
+    %meta{:name => "viewport", :content => "width=768px, minimum-scale=1.0, maximum-scale=1.0"}
+    %title
+      Statoil Debate II
+    %link{:href => "/stylesheets/screen.css", :rel => "stylesheet", :type => "text/css", :media => "screen, projection"}
+    - ["jquery.min", "jquery.easing", "jquery.scroll.events", "application"].each do |js_filename|
+      %script{:src => "/javascripts/#{js_filename}.js", :type => "text/javascript"}
+  %body
+    .site
+      #navigation
+        = partial :navigation
+      #header
+        = partial :header
+      .viewport
+        .stories
+          = partial :stories
+        .debate
+          = partial :debate
